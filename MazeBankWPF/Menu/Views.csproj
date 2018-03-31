@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CadastrarConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MenuInicial.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -61,6 +65,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CadastrarConta.xaml.cs">
+      <DependentUpon>CadastrarConta.xaml</DependentUpon>
     </Compile>
     <Compile Include="MenuInicial.xaml.cs">
       <DependentUpon>MenuInicial.xaml</DependentUpon>
@@ -101,6 +108,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Maze-Bank-png-logo-download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Credit_Card_Red.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,8 +18,8 @@
                     </LinearGradientBrush>
                 </Button.OpacityMask>
             </Button>
-            <Button x:Name="button1" Content="2 - Acessar conta" Click="button1_Click" Background="#FFFF2B2B" BorderBrush="#FF5D4A4A" FontFamily="Arial" FontSize="14"/>
+            <Button x:Name="button1" Content="2 - Acessar conta" Click="button1_Click" Background="#FFFF1A1A" BorderBrush="#FF5D4A4A" FontFamily="Arial" FontSize="14"/>
         </StackPanel>
-        <Button x:Name="button2" Content="0 - Sair" HorizontalAlignment="Left" Margin="161,266,0,0" VerticalAlignment="Top" Width="209" FontFamily="Arial" FontSize="14" Background="#FFFF2929"/>
+        <Button x:Name="button2" Content="0 - Sair" HorizontalAlignment="Left" Margin="161,266,0,0" VerticalAlignment="Top" Width="209" FontFamily="Arial" FontSize="14" Background="#FFFF2121"/>
     </Grid>
 </Window>
