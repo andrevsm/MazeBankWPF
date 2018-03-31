@@ -7,12 +7,12 @@
         mc:Ignorable="d"
         Title="CadastrarCliente" Height="450" Width="800">
     <Grid>
-        <Label x:Name="label" Content="Nome:" HorizontalAlignment="Left" Margin="58,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.092,1.731" Background="#FFFF3B3B" Width="118"/>
+        <Label x:Name="label" Content="Nome:" HorizontalAlignment="Left" Margin="58,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.092,1.731" Background="#FFFF3B3B" Width="118" FontFamily="Arial" FontSize="14"/>
         <Image x:Name="WhatsApp_Image_2018_03_28_at_22_07_02_jpeg" Margin="439,0,0,204" Source="WhatsApp Image 2018-03-28 at 22.07.02.jpeg" Stretch="Fill"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="176,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <Label x:Name="label1" Content="Data de nascimento:" HorizontalAlignment="Left" Margin="58,145,0,0" VerticalAlignment="Top" Background="#FFFF3939"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="176,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <Label x:Name="label2" Content="CPF:" HorizontalAlignment="Left" Margin="58,111,0,0" VerticalAlignment="Top" Height="25" Background="#FFFF3D3D" Width="118"/>
+        <Label x:Name="label1" Content="Data de nascimento:" HorizontalAlignment="Left" Margin="58,145,0,0" VerticalAlignment="Top" Background="#FFFF3939" FontFamily="Arial" FontSize="14"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="196,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Label x:Name="label2" Content="CPF:" HorizontalAlignment="Left" Margin="58,111,0,0" VerticalAlignment="Top" Height="25" Background="#FFFF3D3D" Width="118" FontFamily="Arial" FontSize="14"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="176,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_43_jpeg" Margin="0,274,604,0" Source="WhatsApp Image 2018-03-28 at 22.06.43.jpeg" Stretch="Fill" RenderTransformOrigin="-1.471,-1.606"/>
 
