@@ -23,5 +23,20 @@ namespace Menu
         {
             InitializeComponent();
         }
+
+
+
+        private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarEndereco cadEnd = new CadastrarEndereco();
+            cadEnd.Show();
+        }
+
+        private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarConta cadConta = new CadastrarConta();
+            cadConta.Show();
+
+        }
     }
 }

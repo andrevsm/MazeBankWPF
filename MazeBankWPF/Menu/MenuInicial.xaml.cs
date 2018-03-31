@@ -22,14 +22,17 @@ namespace Menu {
             InitializeComponent();
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
         {
-
+            CadastrarCliente cadCli = new CadastrarCliente();
+            cadCli.Show();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+
+        private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
         {
 
         }
     }
 }
+

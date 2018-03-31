@@ -15,6 +15,9 @@
         <Label x:Name="label2" Content="CPF:" HorizontalAlignment="Left" Margin="58,111,0,0" VerticalAlignment="Top" Height="25" Background="#FFFF3D3D" Width="118" FontFamily="Arial" FontSize="14"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="25" Margin="176,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
         <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_43_jpeg" Margin="0,274,604,0" Source="WhatsApp Image 2018-03-28 at 22.06.43.jpeg" Stretch="Fill" RenderTransformOrigin="-1.471,-1.606"/>
+        <Button x:Name="btnCadastrarConta" Content="Cadastrar conta para esse cliente" HorizontalAlignment="Left" Margin="151,254,0,0" VerticalAlignment="Top" Width="193" Click="btnCadastrarConta_Click"/>
+        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCadastrarEndereco" Content="Cadastrar Endereço" HorizontalAlignment="Left" Margin="151,215,0,0" VerticalAlignment="Top" Width="193" Click="btnCadastrarEndereco_Click"/>
 
     </Grid>
 </Window>
