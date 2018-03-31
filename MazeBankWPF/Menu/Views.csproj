@@ -54,6 +54,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CadastrarCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CadastrarConta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -65,6 +69,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CadastrarCliente.xaml.cs">
+      <DependentUpon>CadastrarCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="CadastrarConta.xaml.cs">
       <DependentUpon>CadastrarConta.xaml</DependentUpon>
@@ -111,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Credit_Card_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WhatsApp Image 2018-03-28 at 22.06.43.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
