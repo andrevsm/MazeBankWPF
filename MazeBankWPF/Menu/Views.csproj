@@ -93,5 +93,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WhatsApp Image 2018-03-28 at 22.07.02.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Maze-Bank-png-logo-download.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
