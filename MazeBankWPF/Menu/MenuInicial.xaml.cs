@@ -10,29 +10,35 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Menu {
+namespace Menu
+{
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MenuInicial.xaml
     /// </summary>
-    public partial class MainWindow : Window {
-        public MainWindow() {
+    public partial class MenuInicial : Window
+    {
+        public MenuInicial()
+        {
             InitializeComponent();
         }
-
         private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
         {
             CadastrarCliente cadCli = new CadastrarCliente();
             cadCli.Show();
-        }
 
+        }
 
         private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
         {
 
         }
+
+        private void btnSair_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }
-
