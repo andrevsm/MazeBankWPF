@@ -131,5 +131,11 @@
   <ItemGroup>
     <Resource Include="Maze-Bank-png-logo-download.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Maze_Bank_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="flat,800x800,070,f.u1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
