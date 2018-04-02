@@ -1,0 +1,46 @@
+﻿<Window x:Class="Menu.CadastrarEndereco"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="CadastrarEndereco" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="201*"/>
+            <RowDefinition Height="218*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Rua:" HorizontalAlignment="Left" Margin="41,44,0,0" VerticalAlignment="Top" Background="#FFFF3939" Width="101" Height="26" FontFamily="Arial" FontSize="14"/>
+        <Label x:Name="label1" Content="Número:" HorizontalAlignment="Left" Margin="41,89,0,0" VerticalAlignment="Top" Background="#FFFF2F2F" Width="101" FontFamily="Arial" FontSize="14" Height="26"/>
+        <Label x:Name="label2" Content="Complemento:" HorizontalAlignment="Left" Margin="41,130,0,0" VerticalAlignment="Top" Background="#FFFF3030" RenderTransformOrigin="0.443,-0.077" FontFamily="Arial" FontSize="14" Height="26" Width="101"/>
+        <Label x:Name="label3" Content="Cidade: " HorizontalAlignment="Left" Margin="41,32,0,0" VerticalAlignment="Top" Background="#FFFF3333" Width="101" Grid.Row="1" FontFamily="Arial" FontSize="14" Height="26"/>
+        <Label x:Name="label4" Content="Estado:" HorizontalAlignment="Left" Margin="41,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.231" Background="#FFFF3333" Width="101" Grid.RowSpan="2" FontFamily="Arial" FontSize="14" Height="26"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="142,89,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.158"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.331"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="26" Margin="142,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="26" Margin="141,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.163"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.33"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="textBox_Copy2" HorizontalAlignment="Left" Height="26" Margin="142,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="26" Margin="142,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="298" Grid.Row="1"/>
+        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_43_jpeg" Margin="0,90,594,0" Source="WhatsApp Image 2018-03-28 at 22.06.43.jpeg" Stretch="Fill" Grid.Row="1"/>
+        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_07_02_jpeg" Margin="463,0,0,0" Source="WhatsApp Image 2018-03-28 at 22.07.02.jpeg" Stretch="Fill"/>
+
+    </Grid>
+</Window>

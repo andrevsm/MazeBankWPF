@@ -15,30 +15,23 @@ using System.Windows.Shapes;
 namespace Menu
 {
     /// <summary>
-    /// Interaction logic for MenuInicial.xaml
+    /// Interaction logic for CadastrarConta.xaml
     /// </summary>
-    public partial class MenuInicial : Window
+    public partial class CadastrarConta : Window
     {
-        public MenuInicial()
+        public CadastrarConta()
         {
             InitializeComponent();
         }
-        private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
-        {
-            CadastrarCliente cadCli = new CadastrarCliente();
-            cadCli.Show();
 
-        }
-
-        private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
 
-        private void btnSair_Click(object sender, RoutedEventArgs e)
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
-
     }
 }

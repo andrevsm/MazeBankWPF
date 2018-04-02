@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Modelos\Models.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{C160925F-EEC2-4350-9D4E-1691D27F478A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "Menu\Views.csproj", "{90104D10-08B3-49F7-9B01-D109D6B6A770}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{109C4238-1C09-417B-9D67-9CA17C4D3F78}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C160925F-EEC2-4350-9D4E-1691D27F478A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C160925F-EEC2-4350-9D4E-1691D27F478A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C160925F-EEC2-4350-9D4E-1691D27F478A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{90104D10-08B3-49F7-9B01-D109D6B6A770}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90104D10-08B3-49F7-9B01-D109D6B6A770}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90104D10-08B3-49F7-9B01-D109D6B6A770}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90104D10-08B3-49F7-9B01-D109D6B6A770}.Release|Any CPU.Build.0 = Release|Any CPU
+		{109C4238-1C09-417B-9D67-9CA17C4D3F78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{109C4238-1C09-417B-9D67-9CA17C4D3F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{109C4238-1C09-417B-9D67-9CA17C4D3F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109C4238-1C09-417B-9D67-9CA17C4D3F78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

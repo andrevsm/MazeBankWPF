@@ -15,30 +15,28 @@ using System.Windows.Shapes;
 namespace Menu
 {
     /// <summary>
-    /// Interaction logic for MenuInicial.xaml
+    /// Interaction logic for CadastrarCliente.xaml
     /// </summary>
-    public partial class MenuInicial : Window
+    public partial class CadastrarCliente : Window
     {
-        public MenuInicial()
+        public CadastrarCliente()
         {
             InitializeComponent();
         }
+
+
+
+        private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
+        {
+            CadastrarEndereco cadEnd = new CadastrarEndereco();
+            cadEnd.Show();
+        }
+
         private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
         {
-            CadastrarCliente cadCli = new CadastrarCliente();
-            cadCli.Show();
+            CadastrarConta cadConta = new CadastrarConta();
+            cadConta.Show();
 
         }
-
-        private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btnSair_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
     }
 }

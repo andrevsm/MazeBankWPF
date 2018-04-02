@@ -1,0 +1,20 @@
+﻿<Window x:Class="Menu.CadastrarConta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Menu"
+        mc:Ignorable="d"
+        Title="CadastrarConta" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="Credit_Card_Red_png" Margin="524,266,0,0" Source="Credit_Card_Red.png" Stretch="Fill"/>
+        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_26_jpeg" Margin="0,0,0,249" Source="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" Stretch="Fill"/>
+        <Label x:Name="label" Content="Agência:" HorizontalAlignment="Left" Margin="71,242,0,0" VerticalAlignment="Top" Background="#FFFF3E3E" BorderBrush="#FF292323" OpacityMask="Black" FontFamily="Arial" FontSize="14"/>
+        <Label x:Name="label1" Content="Conta:" HorizontalAlignment="Left" Margin="71,287,0,0" VerticalAlignment="Top" Width="64" Background="#FFFF4141" FontFamily="Arial" FontSize="14" OpacityMask="Black"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="135,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="135,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" TextChanged="textBox1_TextChanged"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="524,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontFamily="Arial" FontWeight="Bold" FontSize="14" Height="37" Background="White" Foreground="#FFE00000"><Run Text="Ja possui o novo cartão de c"/><Run Text="rédito "/><Run Text="MazeBank"/><Run Text="? Adquira já o seu!"/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>

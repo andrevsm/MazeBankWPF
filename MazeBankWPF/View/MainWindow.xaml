@@ -1,0 +1,18 @@
+﻿<Window x:Class="View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_26_jpeg" Margin="0,0,0,245" Source="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" Stretch="Fill"/>
+        <StackPanel HorizontalAlignment="Left" Height="182" Margin="290,198,0,0" VerticalAlignment="Top" Width="234">
+            <Button x:Name="btnCriarConta" Content="1 - Criar Conta" Click="btnCriarConta_Click"/>
+            <Button x:Name="btnAcessarConta" Content="2 - Acessar Conta" Click="btnAcessarConta_Click"/>
+        </StackPanel>
+        <Button x:Name="btnSair" Content="0 - Sair" HorizontalAlignment="Left" Margin="290,360,0,0" VerticalAlignment="Top" Width="234" Click="btnSair_Click"/>
+
+    </Grid>
+</Window>
