@@ -64,6 +64,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Transferencias.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MinhaConta.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -85,6 +89,9 @@
     </Compile>
     <Compile Include="CadastrarConta.xaml.cs">
       <DependentUpon>CadastrarConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Transferencias.xaml.cs">
+      <DependentUpon>Transferencias.xaml</DependentUpon>
     </Compile>
     <Compile Include="MinhaConta.xaml.cs">
       <DependentUpon>MinhaConta.xaml</DependentUpon>
