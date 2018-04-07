@@ -7,12 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_26_jpeg" Margin="0,0,0,245" Source="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" Stretch="Fill"/>
-        <StackPanel HorizontalAlignment="Left" Height="182" Margin="290,198,0,0" VerticalAlignment="Top" Width="234">
-            <Button x:Name="btnCriarConta" Content="1 - Criar Conta" Click="btnCriarConta_Click"/>
-            <Button x:Name="btnAcessarConta" Content="2 - Acessar Conta" Click="btnAcessarConta_Click"/>
-        </StackPanel>
-        <Button x:Name="btnSair" Content="0 - Sair" HorizontalAlignment="Left" Margin="290,360,0,0" VerticalAlignment="Top" Width="234" Click="btnSair_Click"/>
+        <Image Margin="169,-79,150,127" Source="Maze-Bank-png-logo-download.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="Acessar Conta" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Acessar"/>
+        <Button Content="Criar Conta" HorizontalAlignment="Center" Margin="283,228,283,165" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Criar"/>
+        <Button Content="Sair" HorizontalAlignment="Center" Margin="283,259,283,134" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Sair"/>
 
     </Grid>
 </Window>

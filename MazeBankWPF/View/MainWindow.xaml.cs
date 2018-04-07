@@ -25,20 +25,18 @@ namespace View
             InitializeComponent();
         }
 
-        private void btnCriarConta_Click(object sender, RoutedEventArgs e)
-        {
-            CadastrarCliente cadCli = new CadastrarCliente();
-            cadCli.Show();
+        private void btn_Acessar(object sender, RoutedEventArgs e) {
+            MinhaConta minhaConta = new MinhaConta();
+            minhaConta.Show();
         }
 
-        private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void btn_Criar(object sender, RoutedEventArgs e) {
+            CadastrarConta cadConta = new CadastrarConta();
+            cadConta.Show();
         }
 
-        private void btnSair_Click(object sender, RoutedEventArgs e)
-        {
-
+        private void btn_Sair(object sender, RoutedEventArgs e) {
+            Close();
         }
     }
 }
