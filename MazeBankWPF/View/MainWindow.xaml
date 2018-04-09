@@ -9,8 +9,8 @@
     <Grid>
         <Image Margin="169,-79,150,127" Source="Maze-Bank-png-logo-download.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Acessar Conta" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Acessar"/>
-        <Button Content="Criar Conta" HorizontalAlignment="Center" Margin="283,228,283,165" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Criar"/>
-        <Button Content="Sair" HorizontalAlignment="Center" Margin="283,259,283,134" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Sair"/>
+        <Button Content="Criar Conta" HorizontalAlignment="Center" Margin="0,0,0,-62" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Criar"/>
+        <Button Content="Sair" HorizontalAlignment="Center" Margin="0,0,0,-129" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Sair"/>
 
     </Grid>
 </Window>
