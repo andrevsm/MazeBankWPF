@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,9 @@ namespace Controller {
         static int ultimoId = 0;
 
         public void SalvarCliente(Cliente cliente) {
-            cliente.ClienteId = ultimoId + 1;
-            Clientes.Add(cliente);
-            ultimoId = cliente.ClienteId;
+            MyContext bancoDados = new MyContext();
+            bancoDados.Clientes.Add(cliente);
+            bancoDados.SaveChanges();
         }
 
         public Cliente PesquisarPorId(int id) {

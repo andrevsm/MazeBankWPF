@@ -6,8 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Models.DAL { 
-    public class Context : DbContext {
-        public Context() : base("strConn") {
+    public class MyContext : DbContext {
+        public MyContext() : base("strConn") {
                    
         }
 
