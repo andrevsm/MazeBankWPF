@@ -10,7 +10,7 @@ namespace Models
     {
         public int ClienteId { get; set; }
         public string Nome { get; set; }
-        public DateTime Nascimento { get; set; }
+        public String Nascimento { get; set; }
         public string Cpf { get; set; }
         public int ContaId { get; set; }
         public int EnderecoId { get; set; }

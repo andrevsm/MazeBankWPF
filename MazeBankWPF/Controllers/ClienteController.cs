@@ -12,37 +12,51 @@ namespace Controller {
         static List<Cliente> Clientes = new List<Cliente>();
         static int ultimoId = 0;
 
-        public void SalvarCliente(Cliente cliente) {
+        public static void SalvarCliente(Cliente cliente) {
             MyContext bancoDados = new MyContext();
             bancoDados.Clientes.Add(cliente);
             bancoDados.SaveChanges();
         }
 
-        public Cliente PesquisarPorId(int id) {
-            var c = from x in Clientes
-                    where x.ClienteId == id
-                    select x;
-
-            if (c != null) {
-                return c.FirstOrDefault();
-            }
-            else {
-                return null;
-            }
+        public static Cliente PesquisarPorId(int id) {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Clientes.Find(id);
+        
 
         }
 
-        public void ExcluirCliente(Cliente c) {
-            Clientes.Remove(c);
+        public void ExcluirCliente(int id) {
+            MyContext bancoDados = new MyContext();
+            Cliente clienteAtual = bancoDados.Clientes.Find(id);
+
+         
+
+            bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Deleted;
+
+            bancoDados.SaveChanges();
         }
 
         public List<Cliente> ListarClientes() {
             return Clientes;
         }
 
-        public bool AlterarCliente(Cliente cliente, Cliente alterado) {
-            cliente = alterado;
-            return true;
+        public static List<Cliente> ListarTodosClientes()
+        {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Clientes.ToList();
+        }
+        public static void EditarCliente(int id, Cliente novoCliente)
+        {   
+            MyContext bancoDados = new MyContext();
+            Cliente clienteAtual = bancoDados.Clientes.Find(id);
+
+            clienteAtual.Nome = novoCliente.Nome;
+            clienteAtual.Cpf = clienteAtual.Cpf;
+            clienteAtual.Nascimento = clienteAtual.Nascimento;
+
+            bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Modified;
+
+            bancoDados.SaveChanges();
         }
     }
 }

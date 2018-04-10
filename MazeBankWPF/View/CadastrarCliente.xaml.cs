@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Models;
+using Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,20 +26,8 @@ namespace View
             InitializeComponent();
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
-        }
-
-        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+   
 
         private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
         {
@@ -50,6 +40,22 @@ namespace View
             CadastrarConta cadConta = new CadastrarConta();
             cadConta.Show();
 
+        }
+
+       
+
+        private void SalvarCliente()
+        {
+            Cliente cli = new Cliente();
+            cli.Nome = "Godofredo";
+            cli.Cpf = "12345678909";
+
+            ClienteController.SalvarCliente(cli);
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            SalvarCliente();
         }
     }
 }
