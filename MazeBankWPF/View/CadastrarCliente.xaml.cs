@@ -24,10 +24,7 @@ namespace View
         public CadastrarCliente()
         {
             InitializeComponent();
-        }
-
-
-   
+        }   
 
         private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
         {
@@ -40,9 +37,7 @@ namespace View
             CadastrarConta cadConta = new CadastrarConta();
             cadConta.Show();
 
-        }
-
-       
+        }   
 
         private void SalvarCliente()
         {
@@ -52,7 +47,6 @@ namespace View
 
             ClienteController.SalvarCliente(cli);
         }
-
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             SalvarCliente();

@@ -7,14 +7,10 @@
         mc:Ignorable="d"
         Title="MazeBank - Cadastro de conta" Height="450" Width="800">
     <Grid>
-        <Image x:Name="WhatsApp_Image_2018_03_28_at_22_06_26_jpeg" Margin="0,0,0,225" Source="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" Stretch="Fill"/>
-        <Label x:Name="txtAgencia" Content="Agência&#x9;" HorizontalAlignment="Left" Margin="65,276,0,0" VerticalAlignment="Top" Background="#FFFF5151"/>
-        <Label x:Name="label1" Content="Conta" HorizontalAlignment="Left" Margin="65,314,0,0" VerticalAlignment="Top" Background="#FFFF5353" Width="58"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="123,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="123,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="524,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="258" FontFamily="Arial" FontWeight="Bold" FontSize="14" Height="37" Background="White" Foreground="#FFE00000"><Run Text="Ja possui o novo cartão de c"/><Run Text="rédito "/><Run Text="MazeBank"/><Run Text="? Adquira já o seu!"/><LineBreak/><Run/></TextBlock>
-        <Image x:Name="Credit_Card_Red_png" Margin="524,266,0,0" Source="Credit_Card_Red.png" Stretch="Fill"/>
-
-
+        <Label x:Name="txtAgencia" Content="Agência&#x9;" HorizontalAlignment="Left" Margin="292,141,0,0" VerticalAlignment="Top" Background="#FFFF5151"/>
+        <Label x:Name="label1" Content="Conta" HorizontalAlignment="Left" Margin="292,179,0,0" VerticalAlignment="Top" Background="#FFFF5353" Width="58"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="350,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="350,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
     </Grid>
 </Window>

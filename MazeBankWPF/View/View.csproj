@@ -148,13 +148,13 @@
     <Resource Include="WhatsApp Image 2018-03-28 at 22.07.02.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Credit_Card_Red.png" />
+    <Resource Include="imagens\Credit_Card_Red.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Maze-Bank-png-logo-download.png" />
+    <Resource Include="imagens\Maze-Bank-png-logo-download.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Maze_Bank_Logo.png" />
+    <Resource Include="imagens\Maze_Bank_Logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="flat,800x800,070,f.u1.jpg" />
@@ -170,7 +170,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo_icon.png" />
+    <Resource Include="imagens\logo_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagens\card_gold.jpg" />
+    <Resource Include="imagens\card_grey.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

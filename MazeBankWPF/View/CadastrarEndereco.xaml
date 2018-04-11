@@ -12,13 +12,12 @@
         <Label x:Name="label2" Content="Complemento:" HorizontalAlignment="Left" Margin="172,220,0,0" VerticalAlignment="Top" Background="#FFFF3030" RenderTransformOrigin="0.443,-0.077" FontFamily="Arial" FontSize="14" Height="26" Width="100"/>
         <Label x:Name="label4" Content="Estado:" HorizontalAlignment="Left" Margin="172,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.231" Background="#FFFF3333" Width="100" FontFamily="Arial" FontSize="14" Height="26"/>
         <Label x:Name="label3" Content="Cidade: " HorizontalAlignment="Left" Margin="172,312,0,0" VerticalAlignment="Top" Background="#FFFF3333" Width="100" FontFamily="Arial" FontSize="14" Height="26"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="272,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" TextChanged="textBox_TextChanged"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="272,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" TextChanged="textBox1_TextChanged"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="26" Margin="272,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" TextChanged="textBox2_TextChanged"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="26" Margin="272,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" TextChanged="textBox3_TextChanged"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="26" Margin="272,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" ContextMenuClosing="textBox4_ContextMenuClosing"/>
-        <Image Margin="621,312,10,10" Source="Maze_Bank_Logo.png" Stretch="Fill"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="272,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="272,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="26" Margin="272,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="26" Margin="272,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="26" Margin="272,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
+        <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
         <Label Content="Endereço" HorizontalAlignment="Center" Margin="317,46,317,315" VerticalAlignment="Center" FontSize="36"/>
-
     </Grid>
 </Window>

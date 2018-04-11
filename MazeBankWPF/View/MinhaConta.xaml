@@ -7,13 +7,12 @@
         mc:Ignorable="d"
         Title="MazeBank - Minha Conta" Height="450" Width="800">
     <Grid>
-        <Image Margin="621,312,10,10" Source="Maze_Bank_Logo.png" Stretch="Fill"/>
-        <Label Content="Nome do Usuário" HorizontalAlignment="Center" Margin="239,47,221,311" VerticalAlignment="Center" FontSize="36" Width="332" Height="61"/>
+        <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
+        <Label Content="Olá, " HorizontalAlignment="Center" Margin="239,47,221,311" VerticalAlignment="Center" FontSize="36" Width="332" Height="61"/>
         <Button Content="Transferências" HorizontalAlignment="Left" Margin="261,220,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Transferencias"/>
         <Button Content="Editar conta" HorizontalAlignment="Left" Margin="261,250,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_EditConta"/>
         <Button Content="Excluir conta" HorizontalAlignment="Left" Margin="261,280,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Excluir"/>
         <Button Content="Pagamentos" HorizontalAlignment="Left" Margin="261,190,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Pagamentos"/>
         <Button Content="Ver Saldo" HorizontalAlignment="Left" Margin="261,160,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Saldo"/>
-
     </Grid>
 </Window>
