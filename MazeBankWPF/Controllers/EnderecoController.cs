@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,37 +12,41 @@ namespace Controller {
         static List<Endereco> Enderecos = new List<Endereco>();
         static int ultimoId = 0;
 
-        public void SalvarEndereco(Endereco endereco) {
-            endereco.EnderecoId = ultimoId + 1;
-            Enderecos.Add(endereco);
-            ultimoId = endereco.EnderecoId;
+        public static void SalvarEndereco(Endereco endereco) {
+            MyContext bancoDados = new MyContext();
+            bancoDados.Enderecos.Add(endereco);
+            bancoDados.SaveChanges();
         }
 
-        public Endereco PesquisarPorId(int id) {
-            var c = from x in Enderecos
-                    where x.EnderecoId == id
-                    select x;
-
-            if (c != null) {
-                return c.FirstOrDefault();
-            }
-            else {
-                return null;
-            }
-
+        public static Endereco PesquisarPorId(int id) {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Enderecos.Find(id);
         }
 
-        public void ExcluirEndereco(Endereco e) {
-            Enderecos.Remove(e);
+        public void ExcluirEndereco(int id) {
+            MyContext bancoDados = new MyContext();
+            Endereco enderecoAtual = bancoDados.Enderecos.Find(id);
+
+            bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Deleted;
+            bancoDados.SaveChanges();
         }
 
         public List<Endereco> ListarEnderecos() {
             return Enderecos;
         }
 
-        public bool AlterarEndereco(Endereco endereco, Endereco alterado) {
-            endereco = alterado;
-            return true;
+        public static List<Endereco> ListarTodosEnderecos() {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Enderecos.ToList();
+        }
+        public static void EditarEndereco(int id, Endereco novoEndereco) {
+            MyContext bancoDados = new MyContext();
+            Endereco enderecoAtual = bancoDados.Enderecos.Find(id);
+
+            enderecoAtual = novoEndereco;
+
+            bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Modified;
+            bancoDados.SaveChanges();
         }
     }
 }

@@ -21,18 +21,13 @@ namespace Controller {
         public static Cliente PesquisarPorId(int id) {
             MyContext bancoDados = new MyContext();
             return bancoDados.Clientes.Find(id);
-        
-
         }
 
         public void ExcluirCliente(int id) {
             MyContext bancoDados = new MyContext();
             Cliente clienteAtual = bancoDados.Clientes.Find(id);
 
-         
-
             bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Deleted;
-
             bancoDados.SaveChanges();
         }
 
@@ -40,22 +35,17 @@ namespace Controller {
             return Clientes;
         }
 
-        public static List<Cliente> ListarTodosClientes()
-        {
+        public static List<Cliente> ListarTodosClientes() {
             MyContext bancoDados = new MyContext();
             return bancoDados.Clientes.ToList();
         }
-        public static void EditarCliente(int id, Cliente novoCliente)
-        {   
+        public static void EditarCliente(int id, Cliente novoCliente) {
             MyContext bancoDados = new MyContext();
             Cliente clienteAtual = bancoDados.Clientes.Find(id);
 
-            clienteAtual.Nome = novoCliente.Nome;
-            clienteAtual.Cpf = clienteAtual.Cpf;
-            clienteAtual.Nascimento = clienteAtual.Nascimento;
+            clienteAtual = novoCliente;
 
             bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Modified;
-
             bancoDados.SaveChanges();
         }
     }

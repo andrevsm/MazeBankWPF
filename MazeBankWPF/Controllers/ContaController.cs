@@ -1,4 +1,5 @@
 ﻿using Models;
+using Models.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,37 +12,32 @@ namespace Controller {
         static List<Conta> Contas = new List<Conta>();
         static int ultimoId = 0;
 
-        public void SalvarConta(Conta conta) {
-            conta.ContaId = ultimoId + 1;
-            Contas.Add(conta);
-            ultimoId = conta.ContaId;
+        public static void SalvarConta(Conta conta) {
+            MyContext bancoDados = new MyContext();
+            bancoDados.Contas.Add(conta);
+            bancoDados.SaveChanges();
         }
 
-        public Conta PesquisarPorId(int id) {
-            var c = from x in Contas
-                    where x.ContaId == id
-                    select x;
-
-            if (c != null) {
-                return c.FirstOrDefault();
-            }
-            else {
-                return null;
-            }
-
+        public static Conta PesquisarPorId(int id) {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Contas.Find(id);
         }
 
-        public void ExcluirConta(Conta c) {
-            Contas.Remove(c);
+        public void ExcluirConta(int id) {
+            MyContext bancoDados = new MyContext();
+            Conta contaAtual = bancoDados.Contas.Find(id);
+
+            bancoDados.Entry(contaAtual).State = System.Data.Entity.EntityState.Deleted;
+            bancoDados.SaveChanges();
         }
 
         public List<Conta> ListarContas() {
             return Contas;
         }
 
-        public bool AlterarConta(Conta conta, Conta alterada) {
-            conta = alterada;
-            return true;
+        public static List<Conta> ListarTodosContas() {
+            MyContext bancoDados = new MyContext();
+            return bancoDados.Contas.ToList();
         }
     }
 }

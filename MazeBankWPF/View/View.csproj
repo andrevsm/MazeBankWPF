@@ -139,15 +139,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="WhatsApp Image 2018-03-28 at 22.06.26.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="WhatsApp Image 2018-03-28 at 22.06.43.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="WhatsApp Image 2018-03-28 at 22.07.02.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="imagens\Credit_Card_Red.png" />
   </ItemGroup>
   <ItemGroup>
@@ -155,9 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagens\Maze_Bank_Logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="flat,800x800,070,f.u1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Controllers\Controllers.csproj">

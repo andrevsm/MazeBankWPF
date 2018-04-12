@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controller;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,29 +26,21 @@ namespace View
             InitializeComponent();
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
+        private void SalvarEndereco() {
+            Endereco end = new Endereco();
+            end.Rua = txt_Rua.Text;
+            end.Numero = int.Parse(txt_Numero.Text);
+            end.Complemento = txt_Complemento.Text;
+            end.Cidade = txt_Cidade.Text;
+            end.Estado = txt_Estado.Text;
 
+            EnderecoController.SalvarEndereco(end);
         }
-
-        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void textBox4_ContextMenuClosing(object sender, ContextMenuEventArgs e)
-        {
-
+        private void btnSalvar_Click(object sender, RoutedEventArgs e) {
+            SalvarEndereco();
+            CadastrarConta cadConta = new CadastrarConta();
+            cadConta.Show();
+            Close();
         }
     }
 }

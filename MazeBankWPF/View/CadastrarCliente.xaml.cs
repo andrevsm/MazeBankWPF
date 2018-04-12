@@ -39,6 +39,7 @@ namespace View
             SalvarCliente();
             CadastrarEndereco cadEndereco = new CadastrarEndereco();
             cadEndereco.Show();
+            Close();
         }
     }
 }
