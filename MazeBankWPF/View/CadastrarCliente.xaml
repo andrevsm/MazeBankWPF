@@ -7,15 +7,13 @@
         mc:Ignorable="d"
         Title="CadastrarCliente" Height="450" Width="800">
     <Grid>
-        <Label x:Name="label" Content="Nome:" HorizontalAlignment="Left" Margin="233,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.092,1.731" Background="#FFFF3B3B" Width="118" FontFamily="Arial" FontSize="14"/>
-        <Label x:Name="label2" Content="CPF:" HorizontalAlignment="Left" Margin="233,159,0,0" VerticalAlignment="Top" Height="25" Background="#FFFF3D3D" Width="118" FontFamily="Arial" FontSize="14"/>
-        <Label x:Name="label1" Content="Data de nascimento:" HorizontalAlignment="Left" Margin="233,193,0,0" VerticalAlignment="Top" Background="#FFFF3939" FontFamily="Arial" FontSize="14"/>
-        <TextBox x:Name="txt_NomeCliente" HorizontalAlignment="Left" Height="26" Margin="351,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="txt_CPF" HorizontalAlignment="Left" Height="25" Margin="351,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
-        <TextBox x:Name="txt_DataNascimento" HorizontalAlignment="Left" Height="26" Margin="371,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
-        <Button x:Name="btnCadastrarEndereco" Content="Cadastrar Endereço" HorizontalAlignment="Left" Margin="323,246,0,0" VerticalAlignment="Top" Width="159" Click="btnCadastrarEndereco_Click"/>
-        <Button x:Name="btnCadastrarConta" Content="Cadastrar Conta " HorizontalAlignment="Left" Margin="323,282,0,0" VerticalAlignment="Top" Width="159" Click="btnCadastrarConta_Click"/>
-        <Button x:Name="btnSalvar" Content="Salvar Cliente" HorizontalAlignment="Left" Margin="371,330,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvar_Click"/>
+        <Label x:Name="label" Content="Nome:" HorizontalAlignment="Left" Margin="236,143,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.092,1.731" Background="#FFFF3B3B" Width="118" FontFamily="Arial" FontSize="14"/>
+        <Label x:Name="label2" Content="CPF:" HorizontalAlignment="Left" Margin="236,174,0,0" VerticalAlignment="Top" Height="25" Background="#FFFF3D3D" Width="118" FontFamily="Arial" FontSize="14"/>
+        <Label x:Name="label1" Content="Data de nascimento:" HorizontalAlignment="Left" Margin="236,204,0,0" VerticalAlignment="Top" Background="#FFFF3939" FontFamily="Arial" FontSize="14"/>
+        <TextBox x:Name="txt_NomeCliente" HorizontalAlignment="Left" Height="26" Margin="354,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="txt_CPF" HorizontalAlignment="Left" Height="25" Margin="354,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"/>
+        <TextBox x:Name="txt_DataNascimento" HorizontalAlignment="Left" Height="26" Margin="374,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="btnSalvar" Content="Próximo" HorizontalAlignment="Left" Margin="337,286,0,0" VerticalAlignment="Top" Width="139" Click="btnSalvar_Click" Height="21"/>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
     </Grid>
 </Window>

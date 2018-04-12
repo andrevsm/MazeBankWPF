@@ -25,31 +25,20 @@ namespace View
         {
             InitializeComponent();
         }   
-
-        private void btnCadastrarEndereco_Click(object sender, RoutedEventArgs e)
-        {
-            CadastrarEndereco cadEnd = new CadastrarEndereco();
-            cadEnd.Show();
-        }
-
-        private void btnCadastrarConta_Click(object sender, RoutedEventArgs e)
-        {
-            CadastrarConta cadConta = new CadastrarConta();
-            cadConta.Show();
-
-        }   
-
         private void SalvarCliente()
         {
             Cliente cli = new Cliente();
-            cli.Nome = "Godofredo";
-            cli.Cpf = "12345678909";
+            cli.Nome = txt_NomeCliente.Text;
+            cli.Cpf = txt_CPF.Text;
+            cli.Nascimento = txt_DataNascimento.Text;
 
             ClienteController.SalvarCliente(cli);
         }
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             SalvarCliente();
+            CadastrarEndereco cadEndereco = new CadastrarEndereco();
+            cadEndereco.Show();
         }
     }
 }
