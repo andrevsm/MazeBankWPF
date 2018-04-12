@@ -18,7 +18,7 @@
         <TextBox x:Name="txt_Estado" HorizontalAlignment="Left" Height="26" Margin="272,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <TextBox x:Name="txt_Cidade" HorizontalAlignment="Left" Height="26" Margin="272,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
-        <Label Content="Endereço" HorizontalAlignment="Center" Margin="317,46,317,315" VerticalAlignment="Center" FontSize="36"/>
+        <Label Content="Endereço" HorizontalAlignment="Center" Margin="317,46,283,309" VerticalAlignment="Center" FontSize="36" Width="192" Height="64"/>
         <Button x:Name="btnSalvar" Content="Próximo" HorizontalAlignment="Left" Margin="330,359,0,0" VerticalAlignment="Top" Width="139" Click="btnSalvar_Click" Height="21"/>
     </Grid>
 </Window>
