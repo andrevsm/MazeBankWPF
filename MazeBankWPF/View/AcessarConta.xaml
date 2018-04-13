@@ -9,11 +9,11 @@
     <Grid>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
         <Label x:Name="label" Content="Número da Conta:" HorizontalAlignment="Left" Margin="233,150,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtConta" HorizontalAlignment="Left" Height="26" Margin="345,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="txt_Conta" HorizontalAlignment="Left" Height="26" Margin="345,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
         <Label x:Name="label1" Content="Agência:" HorizontalAlignment="Left" Margin="285,189,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.418,0.538"/>
-        <TextBox x:Name="txtAgencia" HorizontalAlignment="Left" Height="26" Margin="345,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="txt_Agencia" HorizontalAlignment="Left" Height="26" Margin="345,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
         <Label x:Name="label2" Content="Senha:" HorizontalAlignment="Left" Margin="285,229,0,0" VerticalAlignment="Top" Width="55"/>
-        <TextBox x:Name="txtSenha" HorizontalAlignment="Left" Height="26" Margin="345,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <TextBox x:Name="txt_Senha" HorizontalAlignment="Left" Height="26" Margin="345,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
         <Button x:Name="btnAcessarConta" Content="Acessar Conta" HorizontalAlignment="Left" Margin="372,297,0,0" VerticalAlignment="Top" Width="84" Click="btnAcessarConta_Click"/>
         <Label Content="Minha Conta" HorizontalAlignment="Center" Margin="274,42,274,313" VerticalAlignment="Center" FontSize="36" Width="244" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 

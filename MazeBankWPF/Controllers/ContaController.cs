@@ -35,9 +35,18 @@ namespace Controller {
             return Contas;
         }
 
-        public static List<Conta> ListarTodosContas() {
+        public static List<Conta> ListarTodasContas() {
             MyContext bancoDados = new MyContext();
             return bancoDados.Contas.ToList();
         }
+
+        public Conta VerificarLogin(Conta conta) {
+            Conta contaVerificar = PesquisarPorId(conta.ContaId);
+            if (contaVerificar == null || contaVerificar.Agencia != conta.Agencia || contaVerificar.Senha.Equals(conta.Senha)) {
+                return null;
+            } else {
+                return contaVerificar;
+            }
+       }
     }
 }
