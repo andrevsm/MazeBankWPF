@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 namespace Controller {
     public class ContaController {
 
-        static List<Conta> Contas = new List<Conta>();
-        static int ultimoId = 0;
-
         public static void SalvarConta(Conta conta) {
             MyContext bancoDados = new MyContext();
             bancoDados.Contas.Add(conta);
@@ -29,10 +26,6 @@ namespace Controller {
 
             bancoDados.Entry(contaAtual).State = System.Data.Entity.EntityState.Deleted;
             bancoDados.SaveChanges();
-        }
-
-        public List<Conta> ListarContas() {
-            return Contas;
         }
 
         public static List<Conta> ListarTodasContas() {

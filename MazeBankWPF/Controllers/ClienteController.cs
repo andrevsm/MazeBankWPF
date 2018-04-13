@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 namespace Controller {
     public class ClienteController {
 
-        static List<Cliente> Clientes = new List<Cliente>();
-        static int ultimoId = 0;
-
         public static void SalvarCliente(Cliente cliente) {
             MyContext bancoDados = new MyContext();
             bancoDados.Clientes.Add(cliente);
@@ -29,10 +26,6 @@ namespace Controller {
 
             bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Deleted;
             bancoDados.SaveChanges();
-        }
-
-        public List<Cliente> ListarClientes() {
-            return Clientes;
         }
 
         public static List<Cliente> ListarTodosClientes() {

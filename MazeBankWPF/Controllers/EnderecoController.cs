@@ -9,9 +9,6 @@ using System.Threading.Tasks;
 namespace Controller {
     public class EnderecoController {
 
-        static List<Endereco> Enderecos = new List<Endereco>();
-        static int ultimoId = 0;
-
         public static void SalvarEndereco(Endereco endereco) {
             MyContext bancoDados = new MyContext();
             bancoDados.Enderecos.Add(endereco);
@@ -29,10 +26,6 @@ namespace Controller {
 
             bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Deleted;
             bancoDados.SaveChanges();
-        }
-
-        public List<Endereco> ListarEnderecos() {
-            return Enderecos;
         }
 
         public static List<Endereco> ListarTodosEnderecos() {
