@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MazeBank - Cadastro de conta" Height="450" Width="800">
+        Title="MazeBank - Cadastro de conta" Height="450" Width="800" Icon="imagens/logo_icon.png" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label x:Name="txtAgencia" Content="Agência&#x9;" HorizontalAlignment="Left" Margin="292,141,0,0" VerticalAlignment="Top" Background="#FFFF5151"/>
-        <Label x:Name="label1" Content="Senha" HorizontalAlignment="Left" Margin="292,179,0,0" VerticalAlignment="Top" Background="#FFFF5353" Width="58"/>
+        <Label x:Name="labelAgencia" Content="Agência:" HorizontalAlignment="Left" Margin="292,141,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="labelSenha" Content="Senha:" HorizontalAlignment="Left" Margin="303,179,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="txt_Agencia" HorizontalAlignment="Left" Height="26" Margin="350,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <TextBox x:Name="txt_Senha" HorizontalAlignment="Left" Height="26" Margin="350,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
         <Button x:Name="btnSalvar" Content="Criar Conta" HorizontalAlignment="Left" Margin="330,236,0,0" VerticalAlignment="Top" Width="139" Click="btnSalvar_Click" Height="21"/>
+        <Label Content="Conta" HorizontalAlignment="Center" Margin="317,46,308,309" VerticalAlignment="Center" FontSize="36" Width="167" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>

@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MazeBank - Cadastro de Endereço" Height="450" Width="800">
+        Title="MazeBank - Cadastro de Endereço" Height="450" Width="800" Icon="imagens/logo_icon.png">
     <Grid>
-        <Label x:Name="label" Content="Rua:" HorizontalAlignment="Left" Margin="172,134,0,0" VerticalAlignment="Top" Background="#FFFF3939" Width="100" Height="26" FontFamily="Arial" FontSize="14"/>
-        <Label x:Name="label1" Content="Número:" HorizontalAlignment="Left" Margin="172,179,0,0" VerticalAlignment="Top" Background="#FFFF2F2F" Width="100" FontFamily="Arial" FontSize="14" Height="26"/>
-        <Label x:Name="label2" Content="Complemento:" HorizontalAlignment="Left" Margin="172,220,0,0" VerticalAlignment="Top" Background="#FFFF3030" RenderTransformOrigin="0.443,-0.077" FontFamily="Arial" FontSize="14" Height="26" Width="100"/>
-        <Label x:Name="label4" Content="Estado:" HorizontalAlignment="Left" Margin="172,266,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.231" Background="#FFFF3333" Width="100" FontFamily="Arial" FontSize="14" Height="26"/>
-        <Label x:Name="label3" Content="Cidade: " HorizontalAlignment="Left" Margin="172,312,0,0" VerticalAlignment="Top" Background="#FFFF3333" Width="100" FontFamily="Arial" FontSize="14" Height="26"/>
+        <Label x:Name="label" Content="Rua:" HorizontalAlignment="Left" Margin="237,134,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label1" Content="Número:" HorizontalAlignment="Left" Margin="212,179,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Complemento:" HorizontalAlignment="Left" Margin="179,220,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label3" Content="Estado:" HorizontalAlignment="Left" Margin="221,266,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="label4" Content="Cidade:" HorizontalAlignment="Left" Margin="220,312,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="txt_Rua" HorizontalAlignment="Left" Height="26" Margin="272,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <TextBox x:Name="txt_Numero" HorizontalAlignment="Left" Height="26" Margin="272,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <TextBox x:Name="txt_Complemento" HorizontalAlignment="Left" Height="26" Margin="272,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <TextBox x:Name="txt_Estado" HorizontalAlignment="Left" Height="26" Margin="272,266,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <TextBox x:Name="txt_Cidade" HorizontalAlignment="Left" Height="26" Margin="272,312,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
-        <Label Content="Endereço" HorizontalAlignment="Center" Margin="317,46,283,309" VerticalAlignment="Center" FontSize="36" Width="192" Height="64"/>
+        <Label Content="Endereço" HorizontalAlignment="Center" Margin="317,46,308,309" VerticalAlignment="Center" FontSize="36" Width="167" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button x:Name="btnSalvar" Content="Próximo" HorizontalAlignment="Left" Margin="330,359,0,0" VerticalAlignment="Top" Width="139" Click="btnSalvar_Click" Height="21"/>
     </Grid>
 </Window>

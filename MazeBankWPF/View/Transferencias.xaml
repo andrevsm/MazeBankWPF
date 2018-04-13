@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MazeBank - Transferir" Height="450" Width="800">
+        Title="MazeBank - Transferir" Height="450" Width="800" Icon="imagens/logo_icon.png">
     <Grid>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
         <Label Content="Nome do Usuário" HorizontalAlignment="Center" Margin="247,48,213,310" VerticalAlignment="Center" FontSize="36" Width="332" Height="61"/>

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MazeBank - Menu" Height="450" Width="800" UseLayoutRounding="False" Visibility="Visible" Icon="imagens/logo_icon.png" IsTabStop="True">
+        Title="MazeBank - Menu" Height="450" Width="800" UseLayoutRounding="False" Visibility="Visible" Icon="imagens/logo_icon.png" IsTabStop="True" WindowStartupLocation="CenterScreen">
     <Grid IsManipulationEnabled="True">
         <Image Margin="169,-79,150,127" Source="imagens\Maze-Bank-png-logo-download.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Acessar Conta" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Acessar"/>
