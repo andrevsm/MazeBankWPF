@@ -10,34 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace View
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AcessarConta.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AcessarConta : Window
     {
-        public MainWindow()
+        public AcessarConta()
         {
             InitializeComponent();
         }
 
-        private void btn_Acessar(object sender, RoutedEventArgs e)
+        private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
         {
-            AcessarConta minhaConta = new AcessarConta();
+            MinhaConta minhaConta = new MinhaConta();
             minhaConta.Show();
-        }
-
-        private void btn_Criar(object sender, RoutedEventArgs e) {
-            CadastrarCliente cadCliente = new CadastrarCliente();
-            cadCliente.Show();
-        }
-
-        private void btn_Sair(object sender, RoutedEventArgs e) {
             Close();
         }
     }
+
+
 }
