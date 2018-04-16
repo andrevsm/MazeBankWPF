@@ -9,12 +9,12 @@
     <Grid>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
         <Label Content="Nome do Usuário" HorizontalAlignment="Center" Margin="247,48,213,310" VerticalAlignment="Center" FontSize="36" Width="332" Height="61"/>
-        <Label Content="Número da conta:" HorizontalAlignment="Left" Margin="247,175,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Agência:" HorizontalAlignment="Left" Margin="297,201,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Valor:" HorizontalAlignment="Left" Margin="297,229,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="357,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="R$"/>
-
+        <Label Content="Número da conta:" HorizontalAlignment="Left" Margin="245,178,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Conta" HorizontalAlignment="Left" Height="26" Margin="357,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Agência:" HorizontalAlignment="Left" Margin="299,206,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="Valor:" HorizontalAlignment="Left" Margin="314,234,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Agencia" HorizontalAlignment="Left" Height="26" Margin="357,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <TextBox x:Name="txt_Valor" HorizontalAlignment="Left" Height="26" Margin="357,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Button x:Name="btn_Transferir" Content="Transferir" HorizontalAlignment="Left" Margin="330,279,0,0" VerticalAlignment="Top" Width="139" Click="btnTransferir_Click" Height="21"/>
     </Grid>
 </Window>

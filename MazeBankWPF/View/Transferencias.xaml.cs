@@ -20,6 +20,10 @@ namespace View {
         public Transferencias() {
             InitializeComponent();
         }
-       
+
+        private void btnTransferir_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

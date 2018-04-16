@@ -29,7 +29,7 @@ namespace View
         private void btnAcessarConta_Click(object sender, RoutedEventArgs e)
         {
             Conta conta = new Conta();
-            conta.ContaId = int.Parse(txt_Conta.Text);
+            conta.ContaID = int.Parse(txt_Conta.Text);
             conta.Agencia = int.Parse(txt_Agencia.Text);
             conta.Senha = txt_Senha.Text;
 

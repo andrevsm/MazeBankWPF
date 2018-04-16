@@ -17,9 +17,9 @@ namespace Models
         public string Nome { get; set; }
         public string Nascimento { get; set; }
         public string Cpf { get; set; }
-        public int ContaId { get; set; }
+        ///public int ContaId { get; set; }
         public Conta _Conta { get; set; }
-        public int EnderecoId { get; set; }
+        ///public int EnderecoId { get; set; }
         public Endereco _Endereco { get; set; }
     }
 
