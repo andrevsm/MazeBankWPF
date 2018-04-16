@@ -8,7 +8,7 @@ namespace Models
 {
     public class Endereco
     {
-        public int EnderecoId { get; set; }
+        public int EnderecoID { get; set; }
         public string Rua { get; set; }
         public int Numero { get; set; }
         public string Complemento { get; set; }

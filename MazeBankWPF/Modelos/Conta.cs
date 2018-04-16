@@ -8,7 +8,7 @@ namespace Models
 {
     public class Conta
     {
-        public int ContaId { get; set; }
+        public int ContaID { get; set; }
         public int Agencia { get; set; }
         public string Senha { get; set; }
     }

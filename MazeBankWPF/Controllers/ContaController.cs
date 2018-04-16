@@ -33,7 +33,7 @@ namespace Controller {
             return bancoDados.Contas.ToList();
         }
 
-        public static Conta PesquisarConta(Conta contaVerificar) {
+        public Conta PesquisarConta(Conta contaVerificar) {
             MyContext bancoDados = new MyContext();
             Conta contaAtual = bancoDados.Contas.Find(contaVerificar);
             if(contaAtual != null) {
@@ -42,14 +42,5 @@ namespace Controller {
                 return null;
             }
         }
-
-        public Conta VerificarLogin(Conta conta) {
-            Conta contaVerificada = PesquisarConta(conta);
-            if (contaVerificada != null) {
-                return contaVerificada; 
-            } else {
-                return null;
-            }
-       }
     }
 }

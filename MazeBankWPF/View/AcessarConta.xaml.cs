@@ -34,7 +34,7 @@ namespace View
             conta.Senha = txt_Senha.Text;
 
             ContaController cc = new ContaController();
-            Conta contaVerificada = cc.VerificarLogin(conta);
+            Conta contaVerificada = cc.PesquisarConta(conta);
             
             MinhaConta minhaConta = new MinhaConta();
             minhaConta.Show();
