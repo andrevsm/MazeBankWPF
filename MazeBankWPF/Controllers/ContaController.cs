@@ -33,12 +33,22 @@ namespace Controller {
             return bancoDados.Contas.ToList();
         }
 
-        public Conta VerificarLogin(Conta conta) {
-            Conta contaVerificar = PesquisarPorId(conta.ContaId);
-            if (contaVerificar == null || contaVerificar.Agencia != conta.Agencia || contaVerificar.Senha.Equals(conta.Senha)) {
-                return null;
+        public static Conta PesquisarConta(Conta contaVerificar) {
+            MyContext bancoDados = new MyContext();
+            Conta contaAtual = bancoDados.Contas.Find(contaVerificar);
+            if(contaAtual != null) {
+                return contaAtual;
             } else {
-                return contaVerificar;
+                return null;
+            }
+        }
+
+        public Conta VerificarLogin(Conta conta) {
+            Conta contaVerificada = PesquisarConta(conta);
+            if (contaVerificada != null) {
+                return contaVerificada; 
+            } else {
+                return null;
             }
        }
     }
