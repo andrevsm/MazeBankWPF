@@ -24,6 +24,15 @@ namespace View {
         public MinhaConta(Conta contaCliente) {
             minhaConta = contaCliente;
             InitializeComponent();
+            txt_Nome.Text = "A";
+        }
+
+        private void btn_Saldo(object sender, RoutedEventArgs e) {
+
+        }
+
+        private void btn_Deposito(object sender, RoutedEventArgs e) {
+
         }
 
         private void btn_Pagamentos(object sender, RoutedEventArgs e) {
@@ -39,15 +48,6 @@ namespace View {
         }
 
         private void btn_Excluir(object sender, RoutedEventArgs e) {
-
-        }
-
-        private void btn_Saldo(object sender, RoutedEventArgs e) {
-
-        }
-
-        private void btn_Deposito(object sender, RoutedEventArgs e)
-        {
 
         }
     }
