@@ -8,7 +8,7 @@
         Title="MazeBank - Transferir" Height="450" Width="800" Icon="imagens/logo_icon.png">
     <Grid>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
-        <Label Content="Nome do Usuário" HorizontalAlignment="Center" Margin="247,48,213,310" VerticalAlignment="Center" FontSize="36" Width="332" Height="61"/>
+        <Label Content="Transferências" HorizontalAlignment="Center" Margin="299,48,252,307" VerticalAlignment="Center" FontSize="36" Width="241" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="Número da conta:" HorizontalAlignment="Left" Margin="245,178,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="txt_Conta" HorizontalAlignment="Left" Height="26" Margin="357,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <Label Content="Agência:" HorizontalAlignment="Left" Margin="299,206,0,0" VerticalAlignment="Top" FontWeight="Bold"/>

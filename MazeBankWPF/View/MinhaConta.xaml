@@ -14,6 +14,6 @@
         <Button Content="Pagar Contas" HorizontalAlignment="Left" Margin="261,220,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Pagamentos"/>
         <Button Content="Ver Saldo" HorizontalAlignment="Left" Margin="261,160,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Saldo"/>
         <Button Content="Fazer Depósito" HorizontalAlignment="Left" Margin="261,190,0,0" VerticalAlignment="Top" Width="263" Height="25" Click="btn_Deposito"/>
-        <TextBox x:Name="txt_Nome" HorizontalAlignment="Left" Height="50" Margin="261,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="263"/>
+        <Label Content="Minha Conta" HorizontalAlignment="Center" Margin="279,47,290,308" VerticalAlignment="Center" FontSize="36" Width="223" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Window>
