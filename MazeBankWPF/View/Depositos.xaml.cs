@@ -29,7 +29,8 @@ namespace View {
         private void btnDepositar_Click(object sender, RoutedEventArgs e)
         {
             conta.Saldo = Double.Parse(txt_Valor.Text);
-            ContaController.EditarConta(conta);
+            ContaController cc = new ContaController();
+            cc.EditarConta(conta);
             MessageBoxResult deposito = MessageBox.Show("Depósito realizado com sucesso!");
             Close();
         }

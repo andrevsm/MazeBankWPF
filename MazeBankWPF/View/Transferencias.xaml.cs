@@ -20,6 +20,7 @@ namespace View {
     /// </summary>
     public partial class Transferencias : Window {
         private static Conta minhaConta;
+        private static double saldo;
 
         public Transferencias(Conta conta) {
             minhaConta = conta;
@@ -30,8 +31,11 @@ namespace View {
         {
             bool transferencia = Transferir();
             if(transferencia == false) {
-                MessageBoxResult result = MessageBox.Show("Dados incorretos!");
+                MessageBoxResult result = MessageBox.Show("Dados incorretos ou Saldo indisponível!");
             } else {
+                ContaController cc = new ContaController();
+                minhaConta.Saldo -= saldo;
+                cc.EditarConta(minhaConta);
                 MessageBoxResult result = MessageBox.Show("Transferência realizada com sucesso!");
                 Close();
             }
@@ -41,7 +45,11 @@ namespace View {
             Conta contaTransferir = new Conta();
             contaTransferir.Agencia = int.Parse(txt_Agencia.Text);
             contaTransferir.ContaID = int.Parse(txt_Conta.Text);
-            double saldo = double.Parse(txt_Valor.Text);
+            saldo = double.Parse(txt_Valor.Text);
+
+            if (saldo > minhaConta.Saldo) {
+                return false;
+            }
 
             ContaController cc = new ContaController();
             Conta contaTransferida = cc.Transferir(contaTransferir, saldo);

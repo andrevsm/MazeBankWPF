@@ -29,7 +29,7 @@ namespace Controller {
             bancoDados.SaveChanges();
         }
 
-        public static void EditarConta(Conta novaConta) {
+        public void EditarConta(Conta novaConta) {
             MyContext bancoDados = new MyContext();
             ContaController cc = new ContaController();
             Conta contaAtual = cc.PesquisarPorId(novaConta.ContaID);
