@@ -36,12 +36,19 @@ namespace Controller {
 
         public Conta PesquisarConta(Conta contaVerificar) {
             MyContext bancoDados = new MyContext();
-            Conta contaAtual = bancoDados.Contas.Find(contaVerificar);
-            if(contaAtual != null) {
-                return contaAtual;
-            } else {
+            var conta = from x in bancoDados.Contas
+                    where x.ContaID == contaVerificar.ContaID && 
+                    x.Agencia == contaVerificar.Agencia && 
+                    x.Senha.Equals(contaVerificar.Senha)
+                    select x;
+            if(conta != null)
+            {
+                return conta.FirstOrDefault();
+            } else
+            {
                 return null;
             }
+
         }
     }
 }
