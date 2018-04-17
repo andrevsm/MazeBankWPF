@@ -34,6 +34,7 @@ namespace Controller {
             MyContext bancoDados = new MyContext();
             return bancoDados.Clientes.ToList();
         }
+
         public static void EditarCliente(int id, Cliente novoCliente) {
             MyContext bancoDados = new MyContext();
             Cliente clienteAtual = bancoDados.Clientes.Find(id);

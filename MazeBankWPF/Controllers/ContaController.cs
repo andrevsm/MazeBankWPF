@@ -29,9 +29,14 @@ namespace Controller {
             bancoDados.SaveChanges();
         }
 
-        public static List<Conta> ListarTodasContas() {
+        public static void EditarConta(Conta novaConta) {
             MyContext bancoDados = new MyContext();
-            return bancoDados.Contas.ToList();
+            ContaController cc = new ContaController();
+            Conta contaAtual = cc.PesquisarPorId(novaConta.ContaID);
+            contaAtual = novaConta;
+
+            bancoDados.Entry(contaAtual).State = System.Data.Entity.EntityState.Modified;
+            bancoDados.SaveChanges();
         }
 
         public Conta PesquisarConta(Conta contaVerificar) {

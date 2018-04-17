@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Controller;
+using Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,13 +19,19 @@ namespace View {
     /// Interaction logic for Depositos.xaml
     /// </summary>
     public partial class Depositos : Window {
-        public Depositos() {
+        private static Conta conta;
+
+        public Depositos(Conta minhaConta) {
+            conta = minhaConta;
             InitializeComponent();
         }
 
-        private void btnTransferir_Click(object sender, RoutedEventArgs e)
+        private void btnDepositar_Click(object sender, RoutedEventArgs e)
         {
-
+            conta.Saldo = Double.Parse(txt_Valor.Text);
+            ContaController.EditarConta(conta);
+            MessageBoxResult deposito = MessageBox.Show("Depósito realizado com sucesso!");
+            Close();
         }
     }
 }
