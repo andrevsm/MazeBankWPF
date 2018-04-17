@@ -32,8 +32,8 @@ namespace View
         }
 
         private void btn_Criar(object sender, RoutedEventArgs e) {
-            CadastrarCliente cadCliente = new CadastrarCliente();
-            cadCliente.Show();
+            CadastrarConta cadConta = new CadastrarConta();
+            cadConta.Show();
         }
 
         private void btn_Sair(object sender, RoutedEventArgs e) {

@@ -8,18 +8,13 @@ namespace Models
 {
     public class Cliente
     {
-        public Cliente() {
-            _Endereco = new Endereco();
-            _Conta = new Conta();
-        }
-
         public int ClienteID { get; set; }
         public string Nome { get; set; }
         public string Nascimento { get; set; }
         public string Cpf { get; set; }
-        ///public int ContaId { get; set; }
+        public int ContaID { get; set; }
         public Conta _Conta { get; set; }
-        ///public int EnderecoId { get; set; }
+        public int EnderecoID { get; set; }
         public Endereco _Endereco { get; set; }
     }
 

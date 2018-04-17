@@ -9,7 +9,9 @@ using System.Threading.Tasks;
 namespace Controller {
     public class ClienteController {
 
-        public static void SalvarCliente(Cliente cliente) {
+        public static void SalvarCliente(Cliente cliente, Conta contaCadastrada, Endereco enderecoCadastrado) {
+            cliente.ContaID = contaCadastrada.ContaID;
+            cliente.EnderecoID = enderecoCadastrado.EnderecoID;
             MyContext bancoDados = new MyContext();
             bancoDados.Clientes.Add(cliente);
             bancoDados.SaveChanges();

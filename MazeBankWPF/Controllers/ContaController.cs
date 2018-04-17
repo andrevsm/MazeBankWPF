@@ -10,13 +10,13 @@ namespace Controller {
     public class ContaController {
 
 
-        public static void SalvarConta(Conta conta) {
+        public void SalvarConta(Conta conta) {
             MyContext bancoDados = new MyContext();
             bancoDados.Contas.Add(conta);
             bancoDados.SaveChanges();
         }
 
-        public static Conta PesquisarPorId(int id) {
+        public Conta PesquisarPorId(int id) {
             MyContext bancoDados = new MyContext();
             return bancoDados.Contas.Find(id);
         }

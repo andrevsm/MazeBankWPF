@@ -21,12 +21,15 @@ namespace View
     /// </summary>
     public partial class CadastrarEndereco : Window
     {
-        public CadastrarEndereco()
+        private static Conta contaCadastrada;
+
+        public CadastrarEndereco(Conta contaRecebida)
         {
+            contaCadastrada = contaRecebida;
             InitializeComponent();
         }
 
-        private void SalvarEndereco() {
+        private Endereco SalvarEndereco() {
             Endereco end = new Endereco();
             end.Rua = txt_Rua.Text;
             end.Numero = int.Parse(txt_Numero.Text);
@@ -35,11 +38,12 @@ namespace View
             end.Estado = txt_Estado.Text;
 
             EnderecoController.SalvarEndereco(end);
+            return EnderecoController.PesquisarPorId(end.EnderecoID);
         }
         private void btnSalvar_Click(object sender, RoutedEventArgs e) {
-            SalvarEndereco();
-            CadastrarConta cadConta = new CadastrarConta();
-            cadConta.Show();
+            Endereco enderecoCad = SalvarEndereco();
+            CadastrarCliente cadCliente = new CadastrarCliente(contaCadastrada, enderecoCad);
+            cadCliente.Show();
             Close();
         }
     }

@@ -21,8 +21,13 @@ namespace View
     /// </summary>
     public partial class CadastrarCliente : Window
     {
-        public CadastrarCliente()
+        private static Conta contaCadastrada;
+        private static Endereco enderecoCadastrado;
+
+        public CadastrarCliente(Conta contaCad, Endereco enderecoCad)
         {
+            contaCadastrada = contaCad;
+            enderecoCadastrado = enderecoCad;
             InitializeComponent();
         }   
         private void SalvarCliente()
@@ -32,13 +37,12 @@ namespace View
             cli.Cpf = txt_CPF.Text;
             cli.Nascimento = txt_DataNascimento.Text;
 
-            ClienteController.SalvarCliente(cli);
+            ClienteController.SalvarCliente(cli, contaCadastrada, enderecoCadastrado);
         }
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             SalvarCliente();
-            CadastrarEndereco cadEndereco = new CadastrarEndereco();
-            cadEndereco.Show();
+            MessageBoxResult result = MessageBox.Show("CONTA REALIZADA COM SUCESSO!!");
             Close();
         }
     }

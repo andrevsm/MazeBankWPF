@@ -25,17 +25,22 @@ namespace View
         {
             InitializeComponent();
         }
-        private void SalvarConta() {
+        public Conta SalvarConta() {
             Conta conta = new Conta();
             conta.Agencia = int.Parse(txt_Agencia.Text);
             conta.Senha = txt_Senha.Text;
 
-            ContaController.SalvarConta(conta);
+            ContaController cc = new ContaController();
+
+            cc.SalvarConta(conta);
+            Conta contaCad = cc.PesquisarPorId(conta.ContaID);
+            return contaCad;
         }
         private void btnSalvar_Click(object sender, RoutedEventArgs e) {
-            SalvarConta();
+            Conta contaCadastrada = SalvarConta();
+            CadastrarEndereco cadEndereco = new CadastrarEndereco(contaCadastrada);
+            cadEndereco.Show();
             Close();
-            MessageBoxResult result = MessageBox.Show("CONTA REALIZADA COM SUCESSO!!!");
         }
 
 
