@@ -40,7 +40,8 @@ namespace View {
         }
 
         private void btn_Transferencias(object sender, RoutedEventArgs e) {
-
+            Transferencias transferencias = new Transferencias(minhaConta);
+            transferencias.Show();
         }
 
         private void btn_EditConta(object sender, RoutedEventArgs e) {

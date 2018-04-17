@@ -53,7 +53,18 @@ namespace Controller {
             {
                 return null;
             }
+        }
 
+        public Conta Transferir(Conta contaTransferir, Double saldo) {
+            Conta contaAtual = PesquisarPorId(contaTransferir.ContaID);
+
+            if (contaAtual == null) {
+                return null;
+            } else {
+                contaAtual.Saldo += saldo;
+                EditarConta(contaAtual);
+                return contaAtual;
+            }
         }
     }
 }
