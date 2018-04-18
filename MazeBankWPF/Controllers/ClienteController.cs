@@ -44,5 +44,21 @@ namespace Controller {
             bancoDados.Entry(clienteAtual).State = System.Data.Entity.EntityState.Modified;
             bancoDados.SaveChanges();
         }
+        public Cliente PesquisarClientePorContaID(int idConta)
+        {
+            MyContext bancoDados = new MyContext();
+            var cliente = from x in bancoDados.Clientes
+                        where x.ContaID == idConta 
+                        select x;
+            if (cliente != null)
+            {
+                return cliente.FirstOrDefault();
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
+
 }

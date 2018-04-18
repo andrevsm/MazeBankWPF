@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Controller;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,11 +21,15 @@ namespace View {
     public partial class MinhaConta : Window {
 
         private static Conta minhaConta;
+        private static Cliente meuCliente;
 
-        public MinhaConta(Conta contaCliente) {
+        public MinhaConta(Conta contaCliente, Cliente cliente) {
             minhaConta = contaCliente;
+            meuCliente = cliente;
             InitializeComponent();
         }
+
+
 
         private void btn_Saldo(object sender, RoutedEventArgs e) {
             MessageBoxResult saldo = MessageBox.Show("Saldo: R$" + minhaConta.Saldo);
@@ -49,7 +54,20 @@ namespace View {
         }
 
         private void btn_Excluir(object sender, RoutedEventArgs e) {
+            MessageBoxResult result = MessageBox.Show("Deseja realmente exluir a conta?","Excluir conta", MessageBoxButton.YesNo);
+            if (result == MessageBoxResult.Yes)
+            {
+                MessageBoxResult res = MessageBox.Show("APERTOU YES");
+            } else
+            {
 
+            }
+            //ContaController cc = new ContaController();
+            //cc.ExcluirConta(minhaConta.ContaID);
+            //EnderecoController ec = new EnderecoController();
+            //ec.ExcluirEndereco(meuCliente.EnderecoID);
+            //ClienteController cli = new ClienteController();
+            //cli.ExcluirCliente(meuCliente.ClienteID);
         }
     }
 }

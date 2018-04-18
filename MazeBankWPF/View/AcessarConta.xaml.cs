@@ -35,17 +35,20 @@ namespace View
 
             ContaController cc = new ContaController();
             Conta contaVerificada = cc.PesquisarConta(conta);
-            
-            if(contaVerificada != null)
+
+            if (contaVerificada != null)
             {
-                MinhaConta minhaConta = new MinhaConta(contaVerificada);
+                ClienteController cli = new ClienteController();
+                Cliente cliente = cli.PesquisarClientePorContaID(contaVerificada.ContaID);
+                MinhaConta minhaConta = new MinhaConta(contaVerificada, cliente);
                 minhaConta.Show();
                 Close();
-            } else
+            }
+            else
             {
                 MessageBoxResult result = MessageBox.Show("Dados incorretos!!");
             }
-            
+
         }
     }
 }
