@@ -39,7 +39,6 @@ namespace View {
                 Cliente cliente = cli.PesquisarClientePorContaID(contaVerificada.ContaID);
                 cc.ExcluirConta(contaVerificada.ContaID);
                 ec.ExcluirEndereco(cliente.EnderecoID);
-                cli.ExcluirCliente(cliente.ClienteID);
                 return true;
             } else {
                 return false;
