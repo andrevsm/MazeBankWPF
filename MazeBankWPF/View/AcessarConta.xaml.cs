@@ -40,7 +40,7 @@ namespace View
             {
                 ClienteController cli = new ClienteController();
                 Cliente cliente = cli.PesquisarClientePorContaID(contaVerificada.ContaID);
-                MinhaConta minhaConta = new MinhaConta(contaVerificada, cliente);
+                MinhaConta minhaConta = new MinhaConta(contaVerificada);
                 minhaConta.Show();
                 Close();
             }

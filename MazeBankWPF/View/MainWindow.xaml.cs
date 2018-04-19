@@ -39,5 +39,10 @@ namespace View
         private void btn_Sair(object sender, RoutedEventArgs e) {
             Close();
         }
+
+        private void btn_Excluir(object sender, RoutedEventArgs e) {
+            ExcluirConta excluir = new ExcluirConta();
+            excluir.Show();
+        }
     }
 }

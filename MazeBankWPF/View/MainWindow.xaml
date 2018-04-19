@@ -9,11 +9,12 @@
     <Grid IsManipulationEnabled="True">
         <Image Margin="169,-79,150,127" Source="imagens\Maze-Bank-png-logo-download.png" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Button Content="Acessar Conta" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Acessar"/>
-        <Button Content="Criar Conta" HorizontalAlignment="Center" Margin="0,0,0,-62" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Criar"/>
-        <Button Content="Sair" HorizontalAlignment="Center" Margin="0,0,0,-129" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Sair"/>
+        <Button Content="Criar Conta" HorizontalAlignment="Center" Margin="0,0,0,-61" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Criar"/>
+        <Button Content="Sair" HorizontalAlignment="Center" Margin="0,0,0,-185" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Sair"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Center" Margin="10,339,447,45" TextWrapping="Wrap" VerticalAlignment="Center" Width="335" FontFamily="Arial" FontWeight="Bold" FontSize="14" Height="35" Background="White" Foreground="#FFE00000" TextAlignment="Center"><Run Text="Ja possui o novo cartão de c"/><Run Text="rédito "/><Run Text="MazeBank"/><Run Text="?Adquira já o seu!"/><Run Text="!!"/><LineBreak/><Run/></TextBlock>
         <Image x:Name="Credit_Card_Red_png" Margin="384,339,292,10" Source="imagens\Credit_Card_Red.png" Stretch="Fill"/>
         <Image x:Name="card_grey" Margin="525,339,150,10" Source="imagens\card_grey.jpg" Stretch="Fill"/>
         <Image x:Name="card_gold" Margin="666,339,10,10" Source="imagens\card_gold.jpg" Stretch="Fill"/>
+        <Button Content="Excluir conta" HorizontalAlignment="Center" Margin="0,0,0,-123" VerticalAlignment="Center" Width="226" Height="26" Click="btn_Excluir"/>
     </Grid>
 </Window>
