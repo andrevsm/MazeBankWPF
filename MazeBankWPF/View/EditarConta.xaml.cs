@@ -14,24 +14,33 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace View {
+namespace View
+{
     /// <summary>
     /// Interaction logic for Depositos.xaml
     /// </summary>
-    public partial class Depositos : Window {
+    public partial class EditarConta : Window
+    {
         private static Conta conta;
+        private static Endereco endereco;
 
-        public Depositos(Conta minhaConta) {
+        public EditarConta(Conta minhaConta, Endereco meuEndereco)
+        {
             conta = minhaConta;
+            endereco = meuEndereco;
             InitializeComponent();
         }
 
-        private void btnDepositar_Click(object sender, RoutedEventArgs e)
+        private void btnConfirmar_Click(object sender, RoutedEventArgs e)
         {
-            conta.Saldo = Double.Parse(txt_Valor.Text);
+            endereco.Rua = (txt_Endereco.Text);
+            conta.Senha = (txt_Senha.Text);
+            endereco.Numero = int.Parse(txt_Numero.Text);
+            endereco.Complemento = (txt_Complemento.Text);
+
             ContaController cc = new ContaController();
             cc.EditarConta(conta);
-            MessageBoxResult deposito = MessageBox.Show("Depósito realizado com sucesso!");
+            MessageBoxResult edicao = MessageBox.Show("Edição dos dados realizada com sucesso!");
             Close();
         }
     }

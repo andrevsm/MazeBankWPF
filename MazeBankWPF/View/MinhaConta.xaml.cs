@@ -45,7 +45,8 @@ namespace View {
         }
 
         private void btn_EditConta(object sender, RoutedEventArgs e) {
-
+            EditarConta editar = new EditarConta(minhaConta, meuEndereco);
+            editar.Show();
         }        
     }
 }
