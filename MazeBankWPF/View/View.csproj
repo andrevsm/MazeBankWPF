@@ -75,6 +75,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="EditarConta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="ExcluirConta.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -111,6 +115,9 @@
     </Compile>
     <Compile Include="CadastrarConta.xaml.cs">
       <DependentUpon>CadastrarConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditarConta.xaml.cs">
+      <DependentUpon>EditarConta.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExcluirConta.xaml.cs">
       <DependentUpon>ExcluirConta.xaml</DependentUpon>
