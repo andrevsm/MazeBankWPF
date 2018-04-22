@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContasPagasController.cs" />
     <Compile Include="ContaController.cs" />
     <Compile Include="EnderecoController.cs" />
     <Compile Include="ClienteController.cs" />

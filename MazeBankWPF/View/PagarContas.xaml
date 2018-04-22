@@ -1,0 +1,18 @@
+﻿<Window x:Class="View.PagarContas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:View"
+        mc:Ignorable="d"
+        Title="MazeBank - Pagamentos" Height="450" Width="800" Icon="imagens/logo_icon.png">
+    <Grid>
+        <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
+        <Label Content="Pagamentos" HorizontalAlignment="Center" Margin="299,48,252,307" VerticalAlignment="Center" FontSize="36" Width="241" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Número do Boleto:" HorizontalAlignment="Left" Margin="245,178,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Boleto" HorizontalAlignment="Left" Height="26" Margin="357,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Valor:" HorizontalAlignment="Left" Margin="314,234,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="txt_Valor" HorizontalAlignment="Left" Height="26" Margin="357,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Button x:Name="btn_Pagar" Content="Pagar" HorizontalAlignment="Left" Margin="330,279,0,0" VerticalAlignment="Top" Width="139" Click="btnPagar_Click" Height="21"/>
+    </Grid>
+</Window>

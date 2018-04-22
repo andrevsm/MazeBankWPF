@@ -87,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="PagarContas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Transferencias.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -124,6 +128,9 @@
     </Compile>
     <Compile Include="Depositos.xaml.cs">
       <DependentUpon>Depositos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagarContas.xaml.cs">
+      <DependentUpon>PagarContas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Transferencias.xaml.cs">
       <DependentUpon>Transferencias.xaml</DependentUpon>

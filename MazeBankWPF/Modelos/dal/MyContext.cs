@@ -14,5 +14,6 @@ namespace Models.DAL {
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Conta> Contas { get; set; }
         public DbSet<Endereco> Enderecos { get; set; }
+        public DbSet<ContasPagas> ContasPagas { get; set; }
     }
 }

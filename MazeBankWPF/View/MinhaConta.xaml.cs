@@ -36,7 +36,8 @@ namespace View {
         }
 
         private void btn_Pagamentos(object sender, RoutedEventArgs e) {
-
+            PagarContas pagarContas = new PagarContas(minhaConta);
+            pagarContas.Show();
         }
 
         private void btn_Transferencias(object sender, RoutedEventArgs e) {
