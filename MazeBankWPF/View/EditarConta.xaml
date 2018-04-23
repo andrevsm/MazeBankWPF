@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:View"
         mc:Ignorable="d"
-        Title="MazeBank - Depósitos" Height="450" Width="800" Icon="imagens/logo_icon.png">
+        Title="MazeBank - Editar Conta" Height="450" Width="800" Icon="imagens/logo_icon.png">
     <Grid>
         <Image Margin="621,312,10,10" Source="imagens\Maze_Bank_Logo.png" Stretch="Fill"/>
-        <Label Content="Edição" HorizontalAlignment="Center" Margin="289,51,262,304" VerticalAlignment="Center" FontSize="36" Width="241" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label Content="Rua:" HorizontalAlignment="Left" Margin="289,156,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="58"/>
+        <Label Content="Editar Conta" HorizontalAlignment="Center" Margin="289,51,262,304" VerticalAlignment="Center" FontSize="36" Width="241" Height="64" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="Rua:" HorizontalAlignment="Left" Margin="312,156,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="35"/>
         <TextBox x:Name="txt_Endereco" HorizontalAlignment="Left" Height="26" Margin="347,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <Button x:Name="btn_Confirmar" Content="Confirmar Edição" HorizontalAlignment="Left" Margin="347,325,0,0" VerticalAlignment="Top" Width="139" Click="btnConfirmar_Click" Height="21"/>
-        <Label x:Name="Senha" Content="Senha:" HorizontalAlignment="Left" Margin="289,277,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="58" RenderTransformOrigin="0.507,2.962"/>
+        <Label x:Name="Senha" Content="Senha:" HorizontalAlignment="Left" Margin="294,277,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="53" RenderTransformOrigin="0.507,2.962"/>
         <TextBox x:Name="txt_Senha" HorizontalAlignment="Left" Height="26" Margin="347,277,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
         <Label x:Name="Número" Content="Número:"  HorizontalAlignment="Left" Margin="289,191,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="58" RenderTransformOrigin="0.507,2.962"/>
         <TextBox x:Name="txt_Numero" HorizontalAlignment="Left" Height="26" Margin="347,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
