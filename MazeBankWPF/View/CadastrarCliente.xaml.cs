@@ -42,7 +42,7 @@ namespace View
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
             SalvarCliente();
-            MessageBoxResult result = MessageBox.Show("CONTA REALIZADA COM SUCESSO!!");
+            MessageBoxResult result = MessageBox.Show("Cadastro realizado com sucesso!" + "\nNúmero da Conta: " + contaCadastrada.ContaID + "\nAgência: " + contaCadastrada.Agencia + "\nSenha: " + contaCadastrada.Senha, "MazeBank!");
             Close();
         }
     }

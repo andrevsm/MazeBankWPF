@@ -40,6 +40,8 @@ namespace View
             endereco.Rua = (txt_Endereco.Text);
             endereco.Numero = int.Parse(txt_Numero.Text);
             endereco.Complemento = (txt_Complemento.Text);
+            endereco.Cidade = (txt_Cidade.Text);
+            endereco.Estado = (txt_Estado.Text);
 
             conta.Senha = (txt_Senha.Text);
             contaC.EditarConta(conta);
