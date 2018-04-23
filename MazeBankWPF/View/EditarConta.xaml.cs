@@ -36,16 +36,20 @@ namespace View
             ContaController contaC = new ContaController();
             Cliente cliente = cc.PesquisarClientePorContaID(conta.ContaID);
 
-            Endereco endereco = ec.PesquisarPorId(cliente.EnderecoID);
+            Endereco end = ec.PesquisarPorId(cliente.EnderecoID);
+            Endereco endereco = new Endereco();
+
             endereco.Rua = (txt_Endereco.Text);
             endereco.Numero = int.Parse(txt_Numero.Text);
             endereco.Complemento = (txt_Complemento.Text);
             endereco.Cidade = (txt_Cidade.Text);
             endereco.Estado = (txt_Estado.Text);
+            endereco.EnderecoID = end.EnderecoID;
 
             conta.Senha = (txt_Senha.Text);
-            contaC.EditarConta(conta);
             ec.EditarEndereco(endereco);
+            contaC.EditarConta(conta);
+            
 
             MessageBoxResult edicao = MessageBox.Show("Edição dos dados realizada com sucesso!");
             Close();

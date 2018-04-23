@@ -36,7 +36,11 @@ namespace Controller {
             MyContext bancoDados = new MyContext();
             Endereco enderecoAtual = bancoDados.Enderecos.Find(novoEndereco.EnderecoID);
 
-            enderecoAtual = novoEndereco;
+            enderecoAtual.Cidade = novoEndereco.Cidade;
+            enderecoAtual.Complemento = novoEndereco.Complemento;
+            enderecoAtual.Rua = novoEndereco.Rua;
+            enderecoAtual.Numero = novoEndereco.Numero;
+            enderecoAtual.Estado = novoEndereco.Estado;
 
             bancoDados.Entry(enderecoAtual).State = System.Data.Entity.EntityState.Modified;
             bancoDados.SaveChanges();
