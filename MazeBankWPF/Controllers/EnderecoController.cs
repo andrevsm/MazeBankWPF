@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 namespace Controller {
     public class EnderecoController {
 
-        public static void SalvarEndereco(Endereco endereco) {
+        public void SalvarEndereco(Endereco endereco) {
             MyContext bancoDados = new MyContext();
             bancoDados.Enderecos.Add(endereco);
             bancoDados.SaveChanges();
         }
 
-        public static Endereco PesquisarPorId(int id) {
+        public Endereco PesquisarPorId(int id) {
             MyContext bancoDados = new MyContext();
             return bancoDados.Enderecos.Find(id);
         }
@@ -32,9 +32,9 @@ namespace Controller {
             MyContext bancoDados = new MyContext();
             return bancoDados.Enderecos.ToList();
         }
-        public static void EditarEndereco(int id, Endereco novoEndereco) {
+        public void EditarEndereco(Endereco novoEndereco) {
             MyContext bancoDados = new MyContext();
-            Endereco enderecoAtual = bancoDados.Enderecos.Find(id);
+            Endereco enderecoAtual = bancoDados.Enderecos.Find(novoEndereco.EnderecoID);
 
             enderecoAtual = novoEndereco;
 

@@ -37,8 +37,9 @@ namespace View
             end.Cidade = txt_Cidade.Text;
             end.Estado = txt_Estado.Text;
 
-            EnderecoController.SalvarEndereco(end);
-            return EnderecoController.PesquisarPorId(end.EnderecoID);
+            EnderecoController ec = new EnderecoController();
+            ec.SalvarEndereco(end);
+            return ec.PesquisarPorId(end.EnderecoID);
         }
         private void btnSalvar_Click(object sender, RoutedEventArgs e) {
             Endereco enderecoCad = SalvarEndereco();
