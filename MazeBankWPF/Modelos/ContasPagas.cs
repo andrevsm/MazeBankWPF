@@ -8,7 +8,7 @@ namespace Models
 {
     public class ContasPagas
     {
-        public int ContaPagasID { get; set; }
+        public int ContasPagasID { get; set; }
         public int Boleto { get; set; }
         public double Valor { get; set; }
         public int ContaID { get; set; }
