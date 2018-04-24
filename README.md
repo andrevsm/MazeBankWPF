@@ -4,10 +4,9 @@ Aplicativo em WPF para CRUD de um banco virtual.
 Funcionalidades:
 
 1- Cadastro de contas.
-2- Edição de contas.
-3- Exclusão de contas.
-4- Visualização de contas.
-5- Transferências entre contas.
-6- Pagar contas.
+2- EdiÃ§Ã£o de contas.
+3- ExclusÃ£o de contas.
+4- TransferÃªncias entre contas.
+5- Pagar contas.
 
 
